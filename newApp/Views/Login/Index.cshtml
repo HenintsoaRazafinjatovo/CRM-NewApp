@@ -1,40 +1,58 @@
 @{
     Layout = null;
 }
+<!-- Importation de Bootstrap et de Google Fonts -->
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/newApp.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/newApp.styles.css" asp-append-version="true" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <div class="login-container card p-4">
-        <h2 class="card-title text-center">Login</h2>
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="login-container card p-4 shadow-sm rounded-3 border-0" style="max-width: 400px; width: 100%; background: #f8f9fa;">
+        <h2 class="card-title text-center text-dark fw-bold">Login</h2>
         <form asp-action="Login" method="post">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" class="form-control" required>
+            <div class="mb-3">
+                <label for="username" class="form-label fw-semibold text-secondary">Username</label>
+                <input type="text" id="username" name="username" class="form-control rounded-2 border-light" required>
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" class="form-control" required>
+            <div class="mb-3">
+                <label for="password" class="form-label fw-semibold text-secondary">Password</label>
+                <input type="password" id="password" name="password" class="form-control rounded-2 border-light" required>
             </div>
-            <br>
-            <button type="submit" class="btn btn-primary btn-block">Login</button>
+            <button type="submit" class="btn btn-dark w-100 py-2 rounded-2">Login</button>
         </form>
-        <button class="btn btn-danger btn-block mt-3">Sign up with Google</button>
+        @* <button class="btn btn-outline-secondary w-100 py-2 rounded-2 mt-3 d-flex align-items-center justify-content-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google Logo" style="width: 20px; height: 20px; margin-right: 10px;">
+            Sign up with Google
+        </button> *@
     </div>
 </div>
 
 <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
     .login-container {
-        max-width: 400px;
-        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .login-container .card-title {
-        margin-bottom: 20px;
+    .btn-dark {
+        background-color: #343a40;
+        border: none;
     }
 
-    .login-container .btn-block {
-        width: 100%;
+    .btn-dark:hover {
+        background-color: #23272b;
+    }
+
+    .btn-outline-secondary {
+        border: 1px solid #6c757d;
+        color: #6c757d;
+    }
+
+    .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: white;
     }
 </style>
