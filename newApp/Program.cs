@@ -1,11 +1,18 @@
-using YourAppNamespace.Service;
+using newApp.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<LoginService>(); // Ajoutez cette ligne pour enregistrer LoginService
-
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<LoginService>(); // A
+builder.Services.AddAuthentication("Cookies") // Set the default authentication scheme
+    .AddCookie("Cookies", options =>
+    {
+        options.LoginPath = "/Login"; // Path for the login page
+        // options.LogoutPath = "/Account/Logout"; // Path for logout
+        // options.AccessDeniedPath = "/Account/AccessDenied"; // Path for access denied
+    });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,6 +32,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=Index}/{id?}");
 
 app.Run();

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "m//W1H/Tqs9yedYM08k5uFu2/BsMMuRJKVlZhbmOu6kIKDBi8q8JEW+u4HcGZYbIh7R8fWUeYogvthqyg+mICA==",
+  "dgSpecHash": "XTviQDG2IFs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\College\\ANNEE3\\S6\\Evaluation\\Java\\newApp\\newApp.csproj",
+  "projectFilePath": "C:\\Users\\henin\\S5\\EVALUATION\\NEW_APP\\CRM-NewApp\\newApp\\newApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\henin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

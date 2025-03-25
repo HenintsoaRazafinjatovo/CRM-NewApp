@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\College\\ANNEE3\\S6\\Evaluation\\Java\\newApp\\newApp.csproj": {}
+    "C:\\Users\\henin\\S5\\EVALUATION\\NEW_APP\\CRM-NewApp\\newApp\\newApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\College\\ANNEE3\\S6\\Evaluation\\Java\\newApp\\newApp.csproj": {
+    "C:\\Users\\henin\\S5\\EVALUATION\\NEW_APP\\CRM-NewApp\\newApp\\newApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\College\\ANNEE3\\S6\\Evaluation\\Java\\newApp\\newApp.csproj",
+        "projectUniqueName": "C:\\Users\\henin\\S5\\EVALUATION\\NEW_APP\\CRM-NewApp\\newApp\\newApp.csproj",
         "projectName": "newApp",
-        "projectPath": "C:\\Users\\USER\\College\\ANNEE3\\S6\\Evaluation\\Java\\newApp\\newApp.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\College\\ANNEE3\\S6\\Evaluation\\Java\\newApp\\obj\\",
+        "projectPath": "C:\\Users\\henin\\S5\\EVALUATION\\NEW_APP\\CRM-NewApp\\newApp\\newApp.csproj",
+        "packagesPath": "C:\\Users\\henin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\henin\\S5\\EVALUATION\\NEW_APP\\CRM-NewApp\\newApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\henin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
